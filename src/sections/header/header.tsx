@@ -3,7 +3,7 @@ import { LogoIcon } from "@/components/icons/icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   return (
-    <header className="sticky">
+    <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">
           This page is included in a free SaaS Website Kit.
@@ -18,10 +18,11 @@ const Header = () => {
           <LogoIcon />
           <GiHamburgerMenu className="size-5 md:hidden" />
           <nav className="hidden md:flex gap-6 text-black/60 items-center">
-            <a href="">About</a>
-            <a href="">Features</a>
-            <a href="">Customers</a>
-            <a href="">Help</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Customers</a>
+            <a href="#">Updates</a>
+            <a href="#">Help</a>
             <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
               Get for free
             </button>
