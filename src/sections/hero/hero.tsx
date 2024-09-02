@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
-import cogImage from "@/assets/images/cog.png";
-import cylinderImage from "@/assets/images/cylinder.png";
-import noodleImage from "@/assets/images/noodle.png";
+import cogImage from "@/assets/cog.png";
+import cylinderImage from "@/assets/cylinder.png";
+import noodleImage from "@/assets/noodle.png";
 import Image from "next/image";
 export const Hero = () => {
   return (
