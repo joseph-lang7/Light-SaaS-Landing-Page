@@ -34,3 +34,20 @@ export const LogoIcon = () => {
     </svg>
   );
 };
+
+export const CheckIcon = ({ fill }: { fill: string }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill={fill}
+        d="M19.837 8.437l-9.6 9.6a.9.9 0 01-1.275 0l-4.2-4.2a.901.901 0 111.275-1.275L9.6 16.125l8.963-8.962a.902.902 0 011.275 1.275l-.001-.001z"
+      ></path>
+    </svg>
+  );
+};
