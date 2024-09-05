@@ -1,9 +1,9 @@
-import { FaArrowRight } from "react-icons/fa6";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import Image from "next/image";
 import { Container } from "@/components/container/container";
+import { LearnMoreBtn } from "@/components/learn-more-btn/learn-more-btn";
 export const Hero = () => {
   return (
     <section className="pt-8 pb-20 md:pt-5 md:pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_75%)] overflow-x-clip">
@@ -21,10 +21,7 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">Get for free</button>
-              <button className="btn btn-text gap-1">
-                <span>Learn more</span>
-                <FaArrowRight className="size-5" />
-              </button>
+              <LearnMoreBtn />
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative max-w-[648px]">

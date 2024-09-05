@@ -7,7 +7,7 @@
     @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
   }
   .btn-primary {
-    @apply bg-black text-white;
+    @apply bg-black text-white hover:bg-white hover:text-black transition-colors duration-300;
   }
   .btn-secondary {
     @apply bg-white text-black;
