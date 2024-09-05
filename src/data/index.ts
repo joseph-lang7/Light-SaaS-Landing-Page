@@ -141,3 +141,18 @@ export type testimonialType = {
   username: string;
   comment: string;
 };
+
+export const productLinks = ["Features", "Pricing", "Integrations", "Product"];
+
+export const companyLinks = [
+  "About",
+  "Blog",
+  "Careers",
+  "Manifesto",
+  "Press",
+  "Contact",
+];
+
+export const resourcesLinks = ["Examples", "Community", "Guides", "Docs"];
+
+export const legalLinks = ["Privacy", "Terms", "Security"];

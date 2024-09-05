@@ -33,4 +33,7 @@
   .card {
     @apply p-10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] border max-w-xs w-full mt-10 border-[#222222]/10;
   }
+  .footer-link {
+    @apply text-[#808080] hover:text-white transition-colors duration-300;
+  }
 }
