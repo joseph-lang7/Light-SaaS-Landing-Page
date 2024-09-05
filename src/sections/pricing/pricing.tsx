@@ -4,7 +4,7 @@ import { pricingTiers } from "@/data";
 import { pricingTierType } from "@/data";
 export const Pricing = () => {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <Container>
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
@@ -26,7 +26,7 @@ export const Pricing = () => {
               <div
                 className={`${
                   inverse && "border-black bg-black text-white"
-                } p-10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] border max-w-xs w-full mt-10`}
+                } card`}
                 key={title}
               >
                 <div className="flex justify-between">
