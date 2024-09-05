@@ -47,26 +47,28 @@ export const ProductShowcase = () => {
       </div>
       <div>
         <Container>
-          <FeatureCard
-            Icon={PiLeafBold}
-            title="Integration Ecosystem"
-            description="Track your progress and motivate your efforts everyday."
-          />
-          <FeatureCard
-            Icon={PiTargetBold}
-            title="Goal setting and tracking"
-            description="Set and track goals with manageable task breakdowns."
-          />
-          <FeatureCard
-            Icon={MdOutlineLock}
-            title="Secure data encryption"
-            description="Ensure your data’s safety with top-tier encryption."
-          />
-          <FeatureCard
-            Icon={HiOutlineBell}
-            title="Customizable notifications"
-            description="Get alerts on tasks and deadlines that matter most."
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <FeatureCard
+              Icon={PiLeafBold}
+              title="Integration Ecosystem"
+              description="Track your progress and motivate your efforts everyday."
+            />
+            <FeatureCard
+              Icon={PiTargetBold}
+              title="Goal setting and tracking"
+              description="Set and track goals with manageable task breakdowns."
+            />
+            <FeatureCard
+              Icon={MdOutlineLock}
+              title="Secure data encryption"
+              description="Ensure your data’s safety with top-tier encryption."
+            />
+            <FeatureCard
+              Icon={HiOutlineBell}
+              title="Customizable notifications"
+              description="Get alerts on tasks and deadlines that matter most."
+            />
+          </div>
         </Container>
       </div>
     </section>
