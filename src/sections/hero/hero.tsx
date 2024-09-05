@@ -19,7 +19,7 @@ export const Hero = () => {
               your progress, motivate your efforts, and celebrate your
               successes.{" "}
             </p>
-            <div className="flex gap-1 items-center mt-[30px]">
+            <div className="flex gap-4 items-center mt-[30px]">
               <button className="btn btn-primary">Get for free</button>
               <LearnMoreBtn />
             </div>
