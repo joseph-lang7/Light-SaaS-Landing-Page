@@ -7,7 +7,12 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
-
+import acmeLogo from "@/assets/acme.png";
+import quantumLogo from "@/assets/quantum.png";
+import echLogo from "@/assets/echo.png";
+import celestialLogo from "@/assets/celestial.png";
+import pulseLogo from "@/assets/pulse.png";
+import apexLogo from "@/assets/apex.png";
 export const pricingTiers = [
   {
     title: "Free",
@@ -156,3 +161,12 @@ export const companyLinks = [
 export const resourcesLinks = ["Examples", "Community", "Guides", "Docs"];
 
 export const legalLinks = ["Privacy", "Terms", "Security"];
+
+export const logoTickerLogos = [
+  { src: acmeLogo.src, alt: "Acme Logo" },
+  { src: quantumLogo.src, alt: "Quantum Logo" },
+  { src: echLogo.src, alt: "Echo Logo" },
+  { src: celestialLogo.src, alt: "Celestial Logo" },
+  { src: pulseLogo.src, alt: "Pulse Logo" },
+  { src: apexLogo.src, alt: "Apex Logo" },
+];
