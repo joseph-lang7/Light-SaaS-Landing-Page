@@ -15,7 +15,9 @@ export const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="flex flex-col gap-5 mb-[72px] md:mb-0 max-w-[240px] md:justify-between">
             <div className="flex flex-col gap-5">
-              <LogoIcon />
+              <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0  before:w-full before:blur before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD98,#C2F0B1,#2FD8FE)]  before:absolute w-max">
+                <LogoIcon className="relative" />
+              </div>
               <p className="text-[#808080]">
                 Effortlessly turn your ideas into a fully functional,
                 responsive, no-code SaaS website.
