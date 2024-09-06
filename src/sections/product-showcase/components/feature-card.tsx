@@ -15,7 +15,7 @@ export const FeatureCard = ({
         <Icon className="size-6" />
       </div>
       <h3 className="font-bold text-[18px]">{title}</h3>
-      <p className="">{description}</p>
+      <p>{description}</p>
       <LearnMoreBtn />
     </div>
   );
