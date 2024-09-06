@@ -49,7 +49,7 @@ export const Footer = () => {
             </div>
             <div>
               <div>
-                <h4 className="text-white font-bold pb-3">Product</h4>
+                <h4 className="text-white font-bold pb-3">Company</h4>
                 <div className="flex flex-col gap-3">
                   {companyLinks.map((title, idx) => (
                     <a
@@ -65,7 +65,7 @@ export const Footer = () => {
             </div>
             <div>
               <div>
-                <h4 className="text-white font-bold pb-3">Product</h4>
+                <h4 className="text-white font-bold pb-3">Resources</h4>
                 <div className="flex flex-col gap-3">
                   {resourcesLinks.map((title, idx) => (
                     <a
@@ -81,7 +81,7 @@ export const Footer = () => {
             </div>
             <div>
               <div>
-                <h4 className="text-white font-bold pb-3">Product</h4>
+                <h4 className="text-white font-bold pb-3">Legal</h4>
                 <div className="flex flex-col gap-3">
                   {legalLinks.map((title, idx) => (
                     <a
