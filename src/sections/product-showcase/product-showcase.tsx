@@ -9,10 +9,20 @@ import { PiLeafBold } from "react-icons/pi";
 import { PiTargetBold } from "react-icons/pi";
 import { MdOutlineLock } from "react-icons/md";
 import { HiOutlineBell } from "react-icons/hi";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 export const ProductShowcase = () => {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [500, -500]);
   return (
-    <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip"
+    >
       <Container>
         <div className="section-heading">
           <div className="flex justify-center">
@@ -31,18 +41,24 @@ export const ProductShowcase = () => {
       <div className="flex justify-center">
         <div className="relative">
           <Image src={productImage} alt="Product" className="mt-10" />
-          <Image
-            src={pyramidImage}
+          <motion.img
+            src={pyramidImage.src}
             alt="Pyramid Image"
             height={262}
             width={262}
             className="hidden md:block absolute -right-28 -top-16"
+            style={{
+              translateY,
+            }}
           />
-          <Image
-            src={donutImage}
+          <motion.img
+            src={donutImage.src}
             alt="Donut Image"
             height={248}
             className="hidden md:block absolute bottom-24 -left-36"
+            style={{
+              translateY,
+            }}
           />
         </div>
       </div>
