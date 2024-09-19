@@ -1,3 +1,4 @@
+"use client";
 import productImage from "@/assets/product-image.png";
 import Image from "next/image";
 import pyramidImage from "@/assets/pyramid.png";
@@ -8,7 +9,7 @@ import { PiLeafBold } from "react-icons/pi";
 import { PiTargetBold } from "react-icons/pi";
 import { MdOutlineLock } from "react-icons/md";
 import { HiOutlineBell } from "react-icons/hi";
-
+import { motion } from "framer-motion";
 export const ProductShowcase = () => {
   return (
     <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
