@@ -7,10 +7,10 @@
     @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
   }
   .btn-primary {
-    @apply bg-black text-white hover:bg-white hover:text-black transition-colors duration-300;
+    @apply bg-black text-white border border-black hover:bg-white hover:text-black transition-colors duration-300;
   }
   .btn-secondary {
-    @apply bg-white text-black;
+    @apply bg-white text-black hover:bg-black hover:text-white border border-black hover:border-white transition-colors duration-300;
   }
   .btn-text {
     @apply text-black bg-transparent flex gap-1.5 items-center;
