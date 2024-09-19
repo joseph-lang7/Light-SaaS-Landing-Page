@@ -1,3 +1,4 @@
+"use client";
 import { testimonials } from "@/data";
 import { Container } from "@/components/container/container";
 import { TestimonialColumn } from "./components/testimonial-column";
@@ -13,11 +14,12 @@ export const Testimonials = () => {
           <div className="tag">Testimonials</div>
         </div>
         <h2 className="section-title mt-5">What our users say</h2>
-        <div className="flex justify-center gap-6">
-          <TestimonialColumn testimonials={firstColumn} />
+        <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,white_25%,white_75%,transparent)] max-h-[740px] overflow-hidden">
+          <TestimonialColumn testimonials={firstColumn} duration={15} />
           <TestimonialColumn
             testimonials={secondColumn}
             className="hidden md:block"
+            duration={20}
           />
           <TestimonialColumn
             testimonials={thirdColumn}
